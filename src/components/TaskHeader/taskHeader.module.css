@@ -1,0 +1,26 @@
+.taskHeader {
+  position: relative;
+  width: 100%;
+  max-width:390px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(9, 80, 147);
+ 
+}
+ .title {
+   margin-top:25px;
+   display: block;
+    font-size: 2em;
+    font-weight: bold;
+    font-weight: 600;
+    color: white;
+}
+.subtitle{
+  font-size: 1rem;
+  font-weight:600;
+  color:white;
+  margin-bottom:25px;
+}

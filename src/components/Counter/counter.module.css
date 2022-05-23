@@ -1,0 +1,10 @@
+.counter {
+  /* TODO */
+  align-items: center;
+  margin: auto;
+}
+button{
+  background-color: rgb(93, 93, 170);
+  border:  none;
+  border-radius: 5px;
+}

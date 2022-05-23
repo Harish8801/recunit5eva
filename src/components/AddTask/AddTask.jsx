@@ -1,0 +1,32 @@
+import React from "react";
+import styles from "./addTask.module.css";
+
+const AddTask = ({todos,setTodos,inputText,setInputText}) => {
+  // NOTE: do not delete `data-cy` key value pair
+  const inputClick=(e)=>{
+    // console.log(e.target.value);
+    setInputText(e.target.value);
+  }
+
+  const submitClick=()=>{
+    var newTodo={
+      id:Math.random()*100000,
+      text: inputText,
+      done: false,
+      count: 1
+    }
+    if(newTodo.text && newTodo.text!=={...todos}){
+    setTodos([...todos,newTodo]);
+  }
+    console.log(todos)
+  }
+
+  return (
+    <div className={styles.todoForm}>
+      <input data-cy="add-task-input"className={styles.inputBox} type="text" placeholder="Add tasks ...." value={inputText} onChange={inputClick}/>
+      <button data-cy="add-task-button"className={styles.button} onClick={submitClick}>+</button>
+    </div>
+  );
+};
+
+export default AddTask;
